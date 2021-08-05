@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+import calendar
+
 # Create your views here.
 def home(request):
-	return render(request, "baseapp/index.html", {})
+	string="Hello World!"
+	return render(request, "baseapp/index.html", {"string":string})
